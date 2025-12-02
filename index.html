@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethos.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="ethos-nav">
+  <a href="#mision">Misión</a>
+  <a href="#quehacemos">Qué hacemos</a>
+  <a href="#credibilidad">Credibilidad</a>
+  <a href="#aboutus">About Us</a>
+</nav>
+
+    <!-- Sección principal -->
+<section class="hero">
+
+
+    <div class="ethos-logo">
+    <div class="bars">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <span class="ethos-text">ETHOS</span>
+</div>
+
+    <!-- Logo Ethos -->
+    <!-- <img class="logo-ethos"  -->
+    <!--     src="https://raw.githubusercontent.com/baubassi/ethos_play/main/logoe.png" -->
+     <!--    alt="Logo Ethos"> -->
+
+    <!--  <h1>Ethos.</h1>-->
+    <p>Construyendo credibilidad a través de transparencia, trazabilidad y legitimidad.</p>
+    
+    <a href="donar.html" class="cta">Comenzar</a>
+
+    <h2 id="mensaje-dinamico"></h2>
+
+</section>
+
+    
+<!-- Features -->
+<section class="features">
+
+    <div class="feature">
+        <h3><a href="transparencia.html" class="link-feature">Transparencia</a></h3>
+        <p>Cada contribución puede verificarse en tiempo real.</p>
+    </div>
+
+    <div class="feature">
+        <h3><a href="trazabilidad.html" class="link-feature">Trazabilidad</a></h3>
+        <p>Seguimiento claro desde el aporte hasta el impacto final.</p>
+    </div>
+
+    <div class="feature">
+        <h3><a href="legitimidad.html" class="link-feature">Legitimidad</a></h3>
+        <p>Respaldo de quienes confían y avalan nuestro proceso.</p>
+    </div>
+
+</section>
+
+<!-- ❗ ESTA SECCIÓN NO PUEDE IR ADENTRO DEL SCRIPT -->
+<section id="aboutus" class="about-section">
+    <h2>Quiénes somos</h2>
+
+    <div class="about-names">
+        <div class="persona">Bauti</div>
+        <div class="persona">Bauti</div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Ethos — Construyendo confianza.</p>
+
+    <div class="footer-links">
+        <a href="faq.html">FAQ</a>
+        <a href="mailto:bautistabassi@g.harvard.edu">Contacto</a>
+    </div>
+</footer>
+
+<script>
+  const mensajes = [
+    "Recibí reportes claros y auditables para seguir el impacto de cada contribución.",
+    "Transparencia total desde el primer segundo: cada aporte queda registrado y verificado."
+  ];
+
+  const elegido = mensajes[Math.floor(Math.random() * mensajes.length)];
+
+  document.getElementById("mensaje-dinamico").innerText = elegido;
+</script>
+
+
+
+
+
+</body>
+</html>

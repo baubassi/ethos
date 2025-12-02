@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad de Buenos Aires — Ethos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<a href="education.html" class="back-button">← Volver</a>
+
+<section class="instituciones-section">
+
+    <h1 class="titulo-area">Universidad de Buenos Aires</h1>
+    <p class="subtitulo-area">Programas y líneas de donación disponibles dentro de la UBA.</p>
+
+    <div class="instituciones-grid">
+
+       <!-- TARJETA 1 -->
+<div class="institucion-card">
+
+    <!-- Botón AYUDAR arriba izquierda -->
+    <button class="dropdown-btn arriba-izquierda">Ayudar ▼</button>
+
+    <!-- Menú AYUDAR -->
+    <div class="dropdown-content">
+        <a href="LINK_MP"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png"></a>
+        <a href="LINK_UALA"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png"></a>
+        <a href="LINK_DEBITO">💳 Débito</a>
+        <a href="LINK_CREDITO">💳 Crédito</a>
+    </div>
+
+    <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png" class="institucion-logo">
+
+    <h3>Becas para estudiantes</h3>
+    <p>Apoyo económico para alumnos en situación de vulnerabilidad.</p>
+
+    <!-- BOTÓN INFO -->
+    <div class="info-box">
+        <button class="info-btn">Información</button>
+    </div>
+</div>
+
+
+<!-- TARJETA 2 -->
+<div class="institucion-card">
+
+    <button class="dropdown-btn arriba-izquierda">Ayudar ▼</button>
+
+    <div class="dropdown-content">
+        <a href="LINK_MP"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png"></a>
+        <a href="LINK_UALA"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png"></a>
+        <a href="LINK_DEBITO">💳 Débito</a>
+        <a href="LINK_CREDITO">💳 Crédito</a>
+    </div>
+
+    <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png" class="institucion-logo">
+
+    <h3>Bibliotecas y materiales</h3>
+    <p>Compra de libros, renovación de espacios y acceso a recursos.</p>
+
+    <div class="info-box">
+        <button class="info-btn">Información</button>
+    </div>
+</div>
+
+
+<!-- TARJETA 3 -->
+<div class="institucion-card">
+
+    <button class="dropdown-btn arriba-izquierda">Ayudar ▼</button>
+
+    <div class="dropdown-content">
+        <a href="LINK_MP"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png"></a>
+        <a href="LINK_UALA"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png"></a>
+        <a href="LINK_DEBITO">💳 Débito</a>
+        <a href="LINK_CREDITO">💳 Crédito</a>
+    </div>
+
+    <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png" class="institucion-logo">
+
+    <h3>Equipamiento tecnológico</h3>
+    <p>Computadoras, software y aulas digitales para mejorar el aprendizaje.</p>
+
+    <div class="info-box">
+        <button class="info-btn">Información</button>
+    </div>
+</div>
+
+
+<!-- TARJETA 4 -->
+<div class="institucion-card">
+
+    <button class="dropdown-btn arriba-izquierda">Ayudar ▼</button>
+
+    <div class="dropdown-content">
+        <a href="LINK_MP"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png"></a>
+        <a href="LINK_UALA"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png"></a>
+        <a href="LINK_DEBITO">💳 Débito</a>
+        <a href="LINK_CREDITO">💳 Crédito</a>
+    </div>
+
+    <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png" class="institucion-logo">
+
+    <h3>Fondo de investigación</h3>
+    <p>Apoyo a proyectos científicos en diversas facultades.</p>
+
+    <div class="info-box">
+        <button class="info-btn">Información</button>
+    </div>
+</div>
+
+</section>
+
+<script>
+let currentMenu = null;
+
+document.querySelectorAll(".dropdown-btn").forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+
+        const menu = btn.parentElement.querySelector(".dropdown-content");
+
+        if (currentMenu && currentMenu !== menu) {
+            currentMenu.classList.remove("show");
+        }
+
+        menu.classList.toggle("show");
+        currentMenu = menu.classList.contains("show") ? menu : null;
+    });
+});
+
+document.addEventListener("click", () => {
+    if (currentMenu) {
+        currentMenu.classList.remove("show");
+        currentMenu = null;
+    }
+});
+</script>
+
+</body>
+</html>
